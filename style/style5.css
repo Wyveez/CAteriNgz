@@ -1,0 +1,318 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.poppins-regular{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.abril-fatface-regular{
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.oswald-semibold {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 36px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .15);
+    height: 100px;
+}
+
+.navbar_logo{
+    flex: 1;
+}
+
+.navbar_logo img{
+    height: 100px;
+}
+
+.navbar_center{
+    flex: 2;
+    text-align: center;
+}
+
+.navbar_center ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar_center ul li{
+    margin: 0 15px;
+}
+
+.navbar_center ul li a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s;
+}
+
+.navbar_center ul li a:hover{
+    color: #03e7a7;
+}
+
+.navbar_right{
+    flex: 1;
+    text-align: right;
+}
+
+.navbar_right a{
+    text-decoration: none;
+}
+
+.button{
+    color: white;
+    background-color: #5dbea3;
+    box-shadow: 0 .75rem 1.5rem -.5rem rgba(0, 219, 110, 0.3);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #4c9b84;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+    margin: 80px 200px;
+}
+
+.home_header_left{
+    margin-left: 0;
+}
+  
+.home_header_left h1 {
+    margin-top: 10px;
+}
+
+.home_header_left p {
+    margin : 0 150px;
+    font-size: 20px;
+}
+
+.home_header_right img{
+    height: 300px;
+}
+
+.registration_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 200px;
+    background-color: #e3f4f4;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form_group {
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+
+.form_group label {
+    font-family: 'poppins', sans-serif;
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.form_group input{
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#gender-container{
+    font-family: 'poppins', sans-serif;
+    display: flex;
+    gap: 2vw ;
+}
+
+#gender-container input{
+    margin-top: 0;
+}
+
+.radio-container{
+    display: flex;
+    gap: 1vw;
+}
+
+#error-line{
+    font-family: 'poppins', sans-serif;
+    color: red;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn_submit {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #5dbea3;
+    box-shadow: 0 .75rem 1.5rem -.5rem rgba(0, 219, 110, 0.3);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn_submit:hover {
+    background-color: #4c9b84;
+}
+
+footer {
+    background-image: url(../assets/brown-wooden-textured-flooring-background_53876-128536.jpg);
+    color: white;
+    padding: 40px 100px;
+    text-align: center;
+}
+
+.footer_logo img {
+    height: 100px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.footer_address a, .footer_phone, .footer_email a{
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer_social {
+    margin: 40px 0;
+}
+
+.footer_social a {
+    margin: 0 20px;
+    display: inline-block;
+    align-items: center;
+}
+
+.footer_social img {
+    width: 50px;
+    height: 50px;
+}
+
+#tiktok_logo{
+    height: 40px;
+}
+
+.footer_nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_nav ul li {
+    margin: 0 15px;
+}
+
+.footer_nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.footer_nav ul li a:hover {
+    color: #03e7a7;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 10px 50px;
+    }
+    
+    .navbar_center ul {
+        gap: 2vw;
+    }
+    
+    .navbar_center ul li {
+        margin: 10px 0;
+    }
+    
+    .navbar_right {
+        text-align: center;
+    }
+
+    header {
+        flex-direction: column;
+        margin: 40px 50px;
+        text-align: center;
+    }
+
+    .home_header_left {
+        margin: 0;
+    }
+
+    .home_header_left h1 {
+        font-size: 30px;
+    }
+
+    .home_header_left p {
+        margin: 20px 0;
+        font-size: 16px;
+    }
+
+    .home_header_right img {
+        height: 200px;
+        margin: 20px 0;
+    }
+
+    .registration_form{
+        padding: 40px 150px;
+    }
+
+    footer {
+        padding: 40px 50px;
+        text-align: center;
+    }
+
+    .footer_social {
+        margin: 20px 0;
+    }
+    
+    .footer_nav ul {
+        display: flex;
+    }
+}

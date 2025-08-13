@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAteriNgz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style2.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar_logo">
+            <a href="../page/home.html"><img src="../assets/Logo.png" alt="CAteriNgz_logo"></a>
+        </div>
+        <div class="navbar_center poppins-regular">        
+            <ul>
+                <li><a href="../page/home.html">Home</a></li>
+                <li><a href="../page/products.html">Products</a></li>
+                <li><a href="../page/testimonial.html">Testimonial</a></li>
+                <li><a href="../page/about_us.html">About Us</a></li>
+            </ul>
+        </div>
+        <div class="navbar_right poppins-regular">
+           <a href="../page/register.html" class="button">Register</a> 
+        </div>
+    </nav>
+
+    <header>
+        <div class="home_header_left">
+            <h1 class="abril-fatface-regular">Our Product</h1>
+            <p class="poppins-regular">Discover a diverse range of delicious dishes crafted with the finest locally-sourced ingredients. Explore our menu and experience the perfect blend of taste and tradition</p>
+        </div>
+        <div class="home_header_right">
+            <img src="../assets/product_head.png" alt="product_head">
+        </div>
+    </header>
+
+    <div class="search_container">
+        <input type="text" placeholder="Search Menu..." id="search" class="poppins-regular">
+        <button onclick="searchDishes()" class="button poppins-regular">Search</button>
+    </div>
+
+    <div class="menu-section">
+        <div class="menu-category poppins-regular">
+            <div class="menu-title">
+                <h2 class="oswald-semibold">Rice</h2>
+                <p>Savor our delightful rice dishes, perfectly cooked and seasoned to complement any meal</p>
+            </div>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <a href="../assets/paella-lead-64d108cde7f7b.jpg"><img src="../assets/paella-lead-64d108cde7f7b.jpg" alt="paella"></a>
+                    <p>Paella</p>
+                </div>
+                <div class="menu-item">
+                    <a href="../assets/chicken-fried-rice-lead-657a21c4f0ce2.jpg"><img src="../assets/chicken-fried-rice-lead-657a21c4f0ce2.jpg" alt="cfr"></a>
+                    <p>Chicken Fried Rice</p>
+                </div>
+                <div class="menu-item">
+                    <a href="../assets/shrimp-risotto-recipe-1640198718.jpg"><img src="../assets/shrimp-risotto-recipe-1640198718.jpg" alt="shrimp risotto"></a>
+                    <p>Shrimp Risotto</p>
+                </div>
+            </div>
+        </div>
+        <div class="menu-category poppins-regular">
+            <div class="menu-title">
+                <h2 class="oswald-semibold">Chicken</h2>
+                <p>Indulge in our delicious chicken dishes, crafted with the finest cuts and marinated to perfection</p>
+            </div>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <a href="../assets/tandoori-chicken2-1672868378.jpg"><img src="../assets/tandoori-chicken2-1672868378.jpg" alt="Tandoori Chicken"></a>
+                    <p>Tandoori Chicken</p>
+                </div>
+                <div class="menu-item">
+                    <a href="../assets/07-bacon-spinach-stuffed-chicken-11866-v-1582648479.jpg"><img src="../assets/07-bacon-spinach-stuffed-chicken-11866-v-1582648479.jpg" alt="Spinach-Stuffed Chicken Breasts"></a>
+                    <p>Spinach-Stuffed Chicken Breasts</p>
+                </div>
+                <div class="menu-item">
+                    <a href="../assets/delish-221130-garlicky-greek-chicken-0813-eb-1670452544.jpg"><img src="../assets/delish-221130-garlicky-greek-chicken-0813-eb-1670452544.jpg" alt="Garlicky Greek Chicken"></a>
+                    <p>Garlicky Greek Chicken</p>
+                </div>
+            </div>
+        </div>
+        <div class="menu-category poppins-regular">
+            <div class="menu-title">
+                <h2 class="oswald-semibold">Pork</h2>
+                <p>Delight in our succulent pork dishes, prepared with expert care and the freshest ingredients</p>
+            </div>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <a href="../assets/grilled-pork-tenderloin-lead-6626cc715fb61.jpg"><img src="../assets/grilled-pork-tenderloin-lead-6626cc715fb61.jpg" alt="Grilled Pork Tenderloin"></a>
+                    <p>Grilled Pork Tenderloin</p>
+                </div>
+                <div class="menu-item">
+                    <a href="../assets/pork-chops-with-apples-lead-666b61c170ced.jpg"><img src="../assets/pork-chops-with-apples-lead-666b61c170ced.jpg" alt="Pork Chops with Apples"></a>
+                    <p>Pork Chops with Apples</p>
+                </div>
+                <div class="menu-item">
+                    <a href="../assets/1502305465-roast-pork-delish.jpg"><img src="../assets/1502305465-roast-pork-delish.jpg" alt="Crock-Pot Pork Roast"></a>
+                    <p>Crock-Pot Pork Roast</p>
+                </div>
+            </div>
+        </div>
+        <div class="menu-category poppins-regular">
+            <div class="menu-title">
+                <h2 class="oswald-semibold">Beef</h2>
+                <p>Experience the rich, hearty flavors of our beef dishes, made from the highest quality meat</p>
+            </div>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <a href="../assets/12-seo-keto-beef-stew-12022-h-1582813705.jpg"><img src="../assets/12-seo-keto-beef-stew-12022-h-1582813705.jpg" alt="Keto Beef Stew"></a>
+                    <p>Keto Beef Stew</p>
+                </div>
+                <div class="menu-item">
+                    <a href="../assets/20200205-beef-curry-ehg-9728-jpg-1582823107.jpg"><img src="../assets/20200205-beef-curry-ehg-9728-jpg-1582823107.jpg" alt="Beef Curry"></a>
+                    <p>Beef Curry</p>
+                </div>
+                <div class="menu-item">
+                    <a href="../assets/beef-wellington-secondary-65149c43a5565.jpg"><img src="../assets/beef-wellington-secondary-65149c43a5565.jpg" alt="Beef Wellington"></a>
+                    <p>Beef Wellington</p>
+                </div>
+            </div>
+        </div>
+        <div class="menu-category poppins-regular">
+            <div class="menu-title">
+                <h2 class="oswald-semibold">Vegetarian</h2>
+                <p>Explore our vibrant vegetarian menu, filled with fresh, wholesome ingredients and innovative recipes</p>
+            </div>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <a href="../assets/del113023-sesame-tofu-broccoli-006-ab-web-lead-65808036d6bd2.jpg"><img src="../assets/del113023-sesame-tofu-broccoli-006-ab-web-lead-65808036d6bd2.jpg" alt="Sesame Tofu & Broccoli"></a>
+                    <p>Sesame Tofu & Broccoli</p>
+                </div>
+                <div class="menu-item">
+                    <a href="../assets/delish-210519-chillimac-01-portrait-jg-1624549992.jpg"><img src="../assets/delish-210519-chillimac-01-portrait-jg-1624549992.jpg" alt="One-Pot Vegetarian Chili Mac"></a>
+                    <p>One-Pot Vegetarian Chili Mac</p>
+                </div>
+                <div class="menu-item">
+                    <a href="../assets/del049924-vegetable-curry-web-101-rv-hires-lead-66354912308f4.jpg"><img src="../assets/del049924-vegetable-curry-web-101-rv-hires-lead-66354912308f4.jpg" alt="Vegetable Curry"></a>
+                    <p>Vegetable Curry</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="poppins-regular">
+        <div class="footer_logo">
+            <img src="../assets/Logo.png" alt="Logo">
+        </div>
+        <div class="footer_address">
+            <a href="https://maps.app.goo.gl/mwdCT2xEom8bw6RP8">Jl. Rw. Belong No.1, RT.7/RW.15, Palmerah, Kec. Palmerah, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11530</a>
+        </div>
+        <div class="footer_phone">
+            <p>(021) 5694373 / 0813 1644 9999</p>
+        </div>
+        <div class="footer_email">
+            <a href="https://mail.google.com/">CAteriNgz@gmail.com</a>
+        </div>
+        <div class="footer_social">
+            <a href="https://www.instagram.com/"><img src="../assets/white ig.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/"><img src="../assets/white facebook.png" alt="Facebook"></a>
+            <a href="https://www.tiktok.com/"><img src="../assets/white tiktok.png" alt="Tiktok" id="tiktok_logo"></a>
+        </div>
+        <div class="footer_nav">
+            <ul>
+                <li><a href="../page/home.html">Home</a></li>
+                <li><a href="../page/products.html">Products</a></li>
+                <li><a href="../page/testimonial.html">Testimonial</a></li>
+                <li><a href="../page/about_us.html">About Us</a></li>
+                <li><a href="../page/register.html">Register</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,343 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.poppins-regular{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.abril-fatface-regular{
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.oswald-semibold {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 36px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .15);
+    height: 100px;
+}
+
+.navbar_logo{
+    flex: 1;
+}
+
+.navbar_logo img{
+    height: 100px;
+}
+
+.navbar_center{
+    flex: 2;
+    text-align: center;
+}
+
+.navbar_center ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar_center ul li{
+    margin: 0 15px;
+}
+
+.navbar_center ul li a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s;
+}
+
+.navbar_center ul li a:hover{
+    color: #03e7a7;
+}
+
+.navbar_right{
+    flex: 1;
+    text-align: right;
+}
+
+.navbar_right a{
+    text-decoration: none;
+}
+
+.button{
+    color: white;
+    background-color: #5dbea3;
+    box-shadow: 0 .75rem 1.5rem -.5rem rgba(0, 219, 110, 0.3);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #4c9b84;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+    margin: 80px 200px;
+}
+
+.home_header_left{
+    margin-left: 0;
+}
+  
+.home_header_left h1 {
+    margin-top: 10px;
+}
+
+.home_header_left p {
+    margin : 0 150px;
+    font-size: 20px;
+}
+
+.home_header_right img{
+    height: 300px;
+}
+
+.general, .vision, .mission {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 200px;
+}
+
+.general, .mission{
+    background-color: #E3F4F4;
+}
+
+.text {
+    flex: 1;
+    padding: 0 150px;
+}
+
+.image {
+    flex: 1;
+    text-align: right;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.mission ul {
+    padding-left: 20px;
+}
+
+.mission ul li {
+    margin-bottom: 10px;
+}
+
+.teams {
+    text-align: center;
+    padding: 80px 200px;
+}
+
+.teams h2 {
+    margin-bottom: 40px;
+}
+
+.team_row {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0;
+}
+
+.team_member {
+    padding: 10px 10px;
+    text-align: center;
+    width: 350px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.team_member img {
+    width: 350px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.team_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team_name {
+    font-weight: 600;
+    text-align: left;
+}
+
+.team_position {
+    text-align: right;
+}
+
+footer {
+    background-image: url(../assets/brown-wooden-textured-flooring-background_53876-128536.jpg);
+    color: white;
+    padding: 40px 100px;
+    text-align: center;
+}
+
+.footer_logo img {
+    height: 100px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.footer_address a, .footer_phone, .footer_email a{
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer_social {
+    margin: 40px 0;
+}
+
+.footer_social a {
+    margin: 0 20px;
+    display: inline-block;
+    align-items: center;
+}
+
+.footer_social img {
+    width: 50px;
+    height: 50px;
+}
+
+#tiktok_logo{
+    height: 40px;
+}
+
+.footer_nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_nav ul li {
+    margin: 0 15px;
+}
+
+.footer_nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.footer_nav ul li a:hover {
+    color: #03e7a7;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 10px 50px;
+    }
+    
+    .navbar_center ul {
+        gap: 2vw;
+    }
+    
+    .navbar_center ul li {
+        margin: 10px 0;
+    }
+    
+    .navbar_right {
+        text-align: center;
+    }
+
+    header {
+        flex-direction: column;
+        margin: 40px 50px;
+        text-align: center;
+    }
+
+    .home_header_left {
+        margin: 0;
+    }
+
+    .home_header_left h1 {
+        font-size: 30px;
+    }
+
+    .home_header_left p {
+        margin: 20px 0;
+        font-size: 16px;
+    }
+
+    .home_header_right img {
+        height: 200px;
+        margin: 20px 0;
+    }
+
+    .general, .vision, .mission {
+        flex-direction: column;
+        padding: 40px 50px;
+    }
+
+    .text {
+        padding: 0;
+        text-align: center;
+    }
+
+    .image img {
+        width: 50vw;
+        height: 50vh;
+        margin-top: 20px;
+    }
+
+    .team_row {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .team_member {
+        margin-bottom: 50px;
+    }
+
+    .team_member img {
+        width: 100%;
+        height: 50vh;
+    }
+
+    footer {
+        padding: 40px 50px;
+        text-align: center;
+    }
+
+    .footer_social {
+        margin: 20px 0;
+    }
+    
+    .footer_nav ul {
+        display: flex;
+    }
+}
